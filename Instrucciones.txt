@@ -1,0 +1,18 @@
+
+INTRODUCIRSE A LA CARPETA DONDE ESTA ESTE TXT
+(REQUIERE HABER ISNTALADO DOCKER)
+
+INICIAR cargando la imagen docket con el nombre de meraki
+docker build -t meraki .
+
+CON ESTO SE INICIA EN UN PUERTO PREDETERMINADO
+docker run -it  --rm meraki
+
+PARA INDICARLE EL PUERTO DIRECTAMENTE
+docker run -it  --rm -p 8080:8080 meraki
+
+
+esto mandará a llamar a webpage.py la cual se alimenta del archivo latencyStats.csv
+
+Para hacerlo mediante nube, primero crear un repositorio en github u otro similar
+
